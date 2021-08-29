@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dairy_farming_management_app_656995.MainActivity">
+
+    <TextView
+        android:id="@+id/date_tv"
+        android:layout_width="190dp"
+        android:layout_height="30dp"
+        android:layout_above="@+id/change"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginStart="120dp"
+        android:hint="Date selected appears here"
+        android:text="" />
+
+    <Button
+        android:id="@+id/change_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="200dp"
+        android:text="Change Date" />
+
+    <DatePicker
+        android:id="@+id/datePicker"
+        style="@style/AppTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="36dp"
+        android:headerBackground="@color/green" />
+
+</RelativeLayout>

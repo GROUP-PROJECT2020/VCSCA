@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="10dp"
+    app:cardBackgroundColor="@color/colorWhite"
+    app:contentPadding="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/bar1"
+            android:src="@drawable/hbarblack"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerCrop"
+            android:layout_width="100dp"
+            android:layout_height="3dp" />
+
+        <LinearLayout
+            android:id="@+id/profileLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical">
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/uPictureIv"
+                android:src="@drawable/person9"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="7dp"
+                android:layout_marginLeft="110dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+
+            <LinearLayout
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/uNameIV"
+                    android:hint="Name"
+                    android:textSize="17sp"
+                    android:layout_marginTop="17dp"
+                    android:text="Name"
+                    android:textColor="@color/ColorBlack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/delete_bt"
+                android:layout_marginTop="17dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:src="@drawable/drawable_delete"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/bar2"
+            android:src="@drawable/hbarblack"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:scaleType="centerCrop"
+            android:layout_width="100dp"
+            android:layout_height="3dp" />
+
+        <TextView
+            android:id="@+id/pTitleTv"
+            android:layout_width="match_parent"
+            android:textColor="@color/ColorBlack"
+            android:padding="5dp"
+            android:text="The title of the post"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:autoLink="all"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/pDescriptionTv"
+            android:textColor="@color/ColorBlack"
+            android:text="The description of post"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:autoLink="all"
+            android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/date_tv"
+            android:layout_width="wrap_content"
+            android:padding="5dp"
+            android:layout_height="wrap_content"
+            android:autoLink="all"
+            android:hint="The date of the event"
+            android:textColor="@color/ColorBlack"/>
+        <TextView
+            android:id="@+id/location_tv"
+            android:layout_width="wrap_content"
+            android:padding="5dp"
+            android:layout_marginLeft="140dp"
+            android:layout_height="wrap_content"
+            android:hint="The location of the event"
+            android:textColor="@color/ColorBlack"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.323"/>
+    </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/pImageIv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxHeight="100dp"
+            android:minHeight="100dp"
+            android:background="@color/colorWhite"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"/>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

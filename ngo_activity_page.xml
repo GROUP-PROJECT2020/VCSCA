@@ -1,0 +1,310 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorWhite">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="55dp"
+                android:fontFamily="@font/gotham"
+                android:text="@string/selector"
+                android:textColor="#000000"
+                android:textSize="28dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/gotham"
+                android:text="@string/activity"
+                android:textColor="#000000"
+                android:textSize="32sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginTop="2dp"
+                android:background="@color/green" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/calibri"
+        android:gravity="center"
+        android:layout_marginLeft="70dp"
+        android:text="@string/select_activity"
+        android:textColor="#006600"
+        android:textSize="19sp" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPage"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/background_dark" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="109dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/profile_bt"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="40dp"
+                android:clickable="true"
+                android:layout_marginTop="35dp"
+                android:contentDescription="@string/todo"
+                android:scaleType="centerCrop"
+                android:src="@drawable/drawable_profile" />
+
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/hbargreen" />
+
+            <TextView
+                android:id="@+id/profile_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="30dp"
+                android:clickable="true"
+                android:fontFamily="@font/gotham"
+                android:text="PROFILE"
+                android:textColor="@color/green"
+                android:textSize="17sp" />
+
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/hbargreen" />
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_marginLeft="120dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/feed_bt"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="35dp"
+            android:clickable="true"
+            android:contentDescription="@string/todo"
+            android:scaleType="centerCrop"
+            android:src="@drawable/drawable_feed"
+            app:tint="@color/green" />
+
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/hbargreen" />
+
+        <TextView
+            android:id="@+id/feed_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="40dp"
+            android:clickable="true"
+            android:fontFamily="@font/gotham"
+            android:text="FEED"
+            android:textColor="@color/green"
+            android:textSize="17sp" />
+
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/hbargreen" />
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="221dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/post_bt"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="35dp"
+                android:clickable="true"
+                android:contentDescription="@string/todo"
+                android:scaleType="centerCrop"
+                android:src="@drawable/drawable_post"
+                app:tint="@color/green" />
+
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/hbargreen" />
+
+            <TextView
+                android:id="@+id/post_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="40dp"
+                android:clickable="true"
+                android:fontFamily="@font/gotham"
+                android:text="POST"
+                android:textColor="@color/green"
+                android:textSize="17sp" />
+
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/hbargreen" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="30dp"
+        android:src="@drawable/hbarblack" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="103dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="62dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/users_bt"
+                android:layout_width="55dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="15dp"
+                android:clickable="true"
+                android:contentDescription="@string/todo"
+                android:scaleType="centerCrop"
+                android:src="@drawable/drawable_users"
+                app:tint="@color/green" />
+
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/hbargreen" />
+
+            <TextView
+                android:id="@+id/users_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="40dp"
+                android:clickable="true"
+                android:fontFamily="@font/gotham"
+                android:text="USERS"
+                android:textColor="@color/green"
+                android:textSize="17sp" />
+
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/hbargreen" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="103dp"
+            android:layout_marginLeft="166dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/chat_bt"
+                android:layout_width="65dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="15dp"
+                android:clickable="true"
+                android:contentDescription="@string/todo"
+                android:scaleType="centerCrop"
+                android:src="@drawable/drawable_chats"
+                app:tint="@color/green" />
+
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/hbargreen" />
+
+            <TextView
+                android:id="@+id/chat_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="40dp"
+                android:clickable="true"
+                android:fontFamily="@font/gotham"
+                android:text="CHATS"
+                android:textColor="@color/green"
+                android:textSize="17sp" />
+
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/hbargreen" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
+

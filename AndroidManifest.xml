@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.vcsc_app">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/app3"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".UserTypeActivity">
+        </activity>
+        <activity android:name=".AllUsersActivity">
+        </activity>
+        <activity android:name=".AdminLoginActivity">
+        </activity>
+        <activity android:name=".AdminNavigationActivity">
+        </activity>
+        <activity android:name=".AdminHomeActivity">
+        </activity>
+        <activity android:name=".AdminVolunteerUsersActivity">
+        </activity>
+        <activity android:name=".AdminNgoUsersActivity">
+        </activity>
+        <activity android:name=".NgoEventActivity">
+        </activity>
+        <activity android:name=".NgoHomeActivity">
+        </activity>
+        <activity android:name=".NgoLoginActivity">
+        </activity>
+        <activity android:name=".NgoChatActivity">
+        </activity>
+        <activity android:name=".NgoChatListActivity">
+        </activity>
+        <activity android:name=".NgoRegisterActivity">
+        </activity>
+        <activity android:name=".NgoNavigationActivity">
+        </activity>
+        <activity android:name=".NgoNewPostActivity">
+
+        <intent-filter>
+            <action android:name="android.intent.action.SEND" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+
+            <data android:mimeType="image/*" />
+        </intent-filter>
+        <intent-filter>
+            <action android:name="android.intent.action.SEND" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+
+            <data android:mimeType="text/plain" />
+        </intent-filter>
+        </activity>
+        <activity android:name=".NgoPostActivity">
+        </activity>
+        <activity android:name=".NgoActivityPage">
+        </activity>
+        <activity android:name=".NgoProfileActivity">
+        </activity>
+        <activity android:name=".VolunteerProfileActivity">
+        </activity>
+        <activity android:name=".NgoProfileLayoutActivity">
+        </activity>
+        <activity android:name=".NgoProfileDetailsActivity">
+        </activity>
+        <activity android:name=".NgoUsersActivity">
+        </activity>
+        <activity android:name=".VolunteerEventActivity">
+        </activity>
+        <activity android:name=".VolunteerLoginActivity">
+        </activity>
+        <activity android:name=".VolunteerRegisterActivity">
+        </activity>
+        <activity android:name=".VolunteerNavigationActivity">
+        </activity>
+        <activity android:name=".VolunteerProfileDetailsActivity">
+        </activity>
+        <activity android:name=".VolunteerHomeActivity">
+        </activity>
+        <activity android:name=".VolunteerActivityPage">
+        </activity>
+        <activity android:name=".VolunteerUsersActivity">
+        </activity>
+        <activity android:name=".VolunteerChatActivity">
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_place_api" />
+
+        <service
+            android:name=".FirebaseMessaging"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.vcsc_app.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/paths" />
+        </provider>
+    </application>
+
+</manifest>

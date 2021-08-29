@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="2dp"
+    app:cardElevation="2dp"
+    android:background="@color/ColorWhite"
+    app:contentPadding="3dp">
+
+    <ImageView
+        android:id="@+id/bar1"
+        android:src="@drawable/hbaryellow"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerCrop"
+        android:layout_width="240dp"
+        android:layout_height="3dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/avatarIv"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/person8"
+            android:tint="@color/ColorBlack" />
+        
+        <LinearLayout
+            android:layout_width="255dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/nameTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Person Name"
+            android:textSize="15sp"
+            android:textColor="@color/ColorBlack"/>
+        <TextView
+            android:id="@+id/emailTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Person email"
+            android:textColor="@color/ColorBlack"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/delete_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/drawable_delete"
+            app:tint="@color/yellow_500" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/bar2"
+        android:src="@drawable/hbaryellow"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="60dp"
+        android:scaleType="centerCrop"
+        android:layout_width="240dp"
+        android:layout_height="3dp" />
+
+</androidx.cardview.widget.CardView>
